@@ -115,6 +115,7 @@ nav .link {
   color: inherit;
   text-decoration: none;
   color: var(--grey);
+  display: block;
 }
 .e-address:not(:last-child) {
   margin-right: 50px;
@@ -268,6 +269,7 @@ address {
   font-style: normal;
   text-decoration: none;
 }
+/* all focuses based here */
 .link-header:hover,
 .link-header:focus,
 .link-footer:hover,
@@ -278,9 +280,10 @@ nav .link:hover,
 nav .link:focus,
 nav .studio,
 nav .portfolio,
-nav .contacts,
-.e-address:hover,
-.e-address:focus {
+nav .contacts:hover,
+nav .contacts:focus,
+nav .contact:hover,
+nav .contact:focus {
   color: var(--accent-text-cl);
 }
 .link-logo-f {
@@ -310,4 +313,11 @@ nav .contacts,
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-cl);
+}
+/* Portfolio */
+.all-buttons {
+  display: flex;
+}
+.all-projects {
+  display: flex;
 }

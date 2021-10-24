@@ -20,25 +20,26 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="index.html" class="link-logo-h"><span class="web">Web</span>Studio</a>
-        <nav>
+    <header>
+        <nav class="container navigation">
+            <a href="company" class="link-logo-h"><span class="web">Web</span>Studio</a>
             <ul class="menu">
-                <li class="menu-studio"><a href="index.html" class="link studio">Студия</a></li>
-                <li class="menu-portfolio"><a href="portfolio.html" class="link">Портфолио</a></li>
-                <li class="menu-contacts"><a href="#contacts" class="link">Контакты</a></li>
+                <li class="menu-items"><a href="index.html" class="link studio">Студия</a></li>
+                <li class="menu-items"><a href="portfolio.html" class="link">Портфолио</a></li>
+                <li class="menu-items"><a href="#contacts" class="link">Контакты</a></li>
             </ul>
-            <ul>
-                <li><a href="mailto:info@devstudio.com" class="e-address">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="e-address">+38 096 111 11 11</a></li>
+            <ul class="contacts">
+                <li class="e-address"><a class="contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li class="e-address"><a class="contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         </nav>
     </header>
-    <main>       
+    <main>     
+        <div class="container">
         <section class="projects">
             <h1 hidden>portfolio</h1>
             <h2 hidden>Portfolio</h2>
-            <ul>
+            <ul class="all-buttons">
                 <li><button class="btn">Все</button></li>
                 <li><button class="btn">Веб-сайты</button></li>
                 <li><button class="btn">Приложение</button></li>
@@ -98,20 +99,22 @@
                 </li>
             </ul>
         </section>
+        </div>
     </main>
-    <footer class="basement">
-        <a href="index.html" class="link-logo-f"><span class="web">Web</span>Studio</a>
-        <address class="address-accent">
+<footer class="basement">
+    <div class="container">
+        <a href="#company" class="link-logo-f"><span class="web">Web</span>Studio</a>
+        <address>
             <ul>
-                <li><a href="https://goo.gl/maps/876GTmh62noZVfSe7" target="blank" rel="noopener noreferer" 
-                    class="link-address">г. Киев, пр-т Леси Украинки, 26
-                    </a>
-                </li>
-                <li><a href="mailto:" class="link-footer">info@example.com</a></li>
-                <li><a href="tel:+38099111111" class="link-footer">+38 099 111 11 1</a></li>
+                <li class="find-us"><a href="https://goo.gl/maps/876GTmh62noZVfSe7" target="blank"
+                        rel="noopener noreferer" class="link-address">г. Киев, пр-т Леси Украинки, 26
+                    </a></li>
+                <li class="find-us"><a href="mailto:" class="link-footer">info@example.com</a></li>
+                <li class="find-us"><a href="tel:+38099111111" class="link-footer">+38 099 111 11 1</a></li>
             </ul>
         </address>
-    </footer>
+    </div>
+</footer>
 </body>
 
 </html>
