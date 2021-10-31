@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 2px solid tomato;
 }
 .visually-hidden {
   position: absolute;
@@ -24,6 +25,7 @@ html {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 :root {
   --main-text-cl: #212121;
   --accent-text-cl: #2196f3;
@@ -32,7 +34,7 @@ html {
   --background: #2f303a;
   --footer: rgba(255, 255, 255, 0.6);
   --button: #f5f4fa;
-  --body-background: #e5e5e5;
+  --body-background: #ffffff;
 }
 a {
   text-decoration: none;
@@ -63,7 +65,6 @@ body {
   color: var(--main-text-cl);
   background-color: var(--body-background);
   outline: 1px rgb(252, 15, 27);
-  width: 1600px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -71,9 +72,14 @@ body {
   background-color: var(--white);
   margin-bottom: 94px;
 }
+.nav-position {
+  display: flex;
+  align-items: center;
+}
 .navigation {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
 .link-logo-h {
   font-family: "Raleway", sans-serif;
@@ -87,12 +93,16 @@ body {
   margin-right: 93px;
   padding-bottom: 25px;
 }
+.menu-items {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .menu-items:not(:last-child) {
   margin-right: 50px;
 }
 nav .link {
   font-weight: 500;
-  line-height: 1.142px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
@@ -102,20 +112,24 @@ nav .link {
 }
 .menu {
   display: flex;
+  margin-right: auto;
 }
 .contacts {
   display: flex;
-  margin-left: auto;
 }
 .contact {
   font-weight: 500;
-  line-height: 1.142px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: inherit;
   text-decoration: none;
   color: var(--grey);
   display: block;
+}
+.e-address {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .e-address:not(:last-child) {
   margin-right: 50px;
@@ -124,13 +138,8 @@ nav .link {
   display: flex;
   flex-direction: column;
   background-color: var(--background);
-  align-items: center;
-  margin-bottom: 94px;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--background);
-  align-items: center;
-  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: var(--white);
@@ -140,21 +149,15 @@ nav .link {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0;
-  padding: 200px 252px 30px 252px;
+  width: 696px;
+  height: 120px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.hero-btn {
+  margin: auto;
 }
 
-.hero-title {
-  color: var(--white);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 200px 252px 30px 252px;
-}
 .btn {
   font-family: Roboto;
   font-style: normal;
@@ -163,6 +166,7 @@ nav .link {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  display: inline-block;
   display: flex;
   align-items: center;
   text-align: center;
@@ -174,13 +178,10 @@ nav .link {
   box-shadow: none;
   border: none;
   min-width: none;
-  min-height: 50;
   box-sizing: border-box;
+  min-height: 50;
 }
-.hero-btn {
-  margin: auto;
-  margin-bottom: 200px;
-}
+
 .btn:hover,
 .btn:focus {
   color: var(--white);
@@ -190,7 +191,8 @@ nav .link {
 .company-values {
   display: flex;
   align-items: center;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .competence:not(:last-child) {
   margin-right: 30px;
@@ -202,7 +204,7 @@ nav .link {
 .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  line-height: 1.16;
   text-align: center;
   color: var(--main-text-cl);
   margin-bottom: 50px;
@@ -212,10 +214,10 @@ nav .link {
   font-weight: 500;
   line-height: 1.14;
   text-transform: uppercase;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .our-work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .our-projects {
   display: flex;
@@ -223,10 +225,14 @@ nav .link {
 .project-items:not(:last-child) {
   margin-right: 30px;
 }
+.our-team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: var(--button);
+}
 .team {
   text-align: center;
   display: flex;
-  margin-bottom: 94px;
 }
 .member {
   background-color: var(--white);
@@ -251,8 +257,7 @@ nav .link {
 .basement {
   background-color: var(--background);
   color: var(--white);
-}
-address {
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 .find-us:not(:last-child) {
@@ -295,7 +300,6 @@ nav .contact:focus {
   font-style: normal;
   color: var(--white);
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 .web {
@@ -317,7 +321,20 @@ nav .contact:focus {
 /* Portfolio */
 .all-buttons {
   display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 56px;
 }
 .all-projects {
   display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-btn:not(:last-child) {
+  margin-right: 30px;
+}
+.project {
+  margin-right: 30px;
+}
+.project:nth-child(3n) {
+  margin-right: 0;
 }
